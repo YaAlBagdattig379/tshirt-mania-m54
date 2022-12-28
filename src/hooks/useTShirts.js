@@ -1,7 +1,7 @@
 import {useState , useEffect} from "react";
 
 const useTShirts = () => {
-      const [tShirts,setTShirts] = useState({});
+      const [tShirts,setTShirts] = useState([]);
       // console.log(tShirts);
       useEffect( () =>{
         fetch('tShirts.json')
