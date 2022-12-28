@@ -1,18 +1,17 @@
 import React from 'react';
-import {useTShirts} from '../../hooks/useTShirts';
-import Cart from '../Cart/Cart';
-import './Home.css'
+import useTShirts from '../../hooks/useTShirts';
+import './Home.css';
 
 const Home = () => {
-    const [tShirts,setTShirts] = useTShirts();
-    // const [tShirts,setTShirts] = useTShirts();
+    const [tShirts, setTShirts] = useTShirts();
+
     return (
         <div className='home-container'>
             <div className="tShirt-container">
-                   {tShirts.length}
+                <p>total nums : {tShirts.length} </p>
             </div>
             <div className="cart-container">
-                <Cart></Cart>
+                {/* <Cart></Cart> */}
             </div>
         </div>
     );
