@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RingContext } from '../Grandpa/Grandpa';
 
-const SpecialOne = ({house,ornaments}) => {
+const SpecialOne = ({house}) => {
+    const context = useContext(RingContext);
     return (
         <div>
             <h4>SpecialOne</h4>
             <p>House : {house}</p>
-             <h5>Gifts : {ornaments}</h5>
+             <h4>Gifts : {context}</h4>{/*  used useContext*/}
         </div>
     );
 };

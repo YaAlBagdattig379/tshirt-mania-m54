@@ -1,12 +1,12 @@
 import React from 'react';
 import SpecialOne from '../SpecialOne/SpecialOne';
 
-const Me = ({house,ornaments}) => {
+const Me = ({house}) => {
     return (
         <div>
             <h4>Me</h4>
             <p>House : {house}</p>
-            <SpecialOne house = {house} ornaments={ornaments}></SpecialOne>
+            <SpecialOne house = {house}></SpecialOne>
         </div>
     );
 };

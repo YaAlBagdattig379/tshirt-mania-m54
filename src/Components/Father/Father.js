@@ -13,7 +13,7 @@ const Father = ({house,ornaments}) => {
             <h3>Father </h3>
             <p>House : {house}</p>
             <div className='father-child'>
-               <Me house={house} ornaments={ornaments}></Me>
+               <Me house={house}></Me>
                <Brother house={house}></Brother>
                <Sister house={house}></Sister>
             </div>
