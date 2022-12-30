@@ -3,7 +3,16 @@ import Aunty from '../Aunty/Aunty';
 import Father from '../Father/Father';
 import Uncle from '../Uncle/Uncle';
 import './Grandpa.css'
-
+/**            Context API in react
+ * ..1..Call createContext with a default value.
+ * ..2..set a variable of the Context with UpperCase.
+ * ..3..Make sure you export the context to use it in other places. 
+ * ..4..Wrap you child Content using RingContext.provider. 
+ * ..5..Provide a value. 
+ * ..6..To consume the context from child component, use useContext hook and
+ *      you will you need to pass the contextName .
+ * ..7..take a clear notes for future...    
+ */
 export const RingContext = createContext('ring');
 const Grandpa = () => {
     const [house,setHouse] = useState(1);
